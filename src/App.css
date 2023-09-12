@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(5px + 2vmin); */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container{
+  width:500px;
+  margin:10px auto;
+}
+.bandContainer{
+  display:flex;
+  justify-content:space-between;
+}
+.bandContainer > *{
+  padding:10px;
+  width:48%;
+  text-align:center;
+  border:1px solid green;
+  margin-bottom:5px;
+}
+.resistorDaigram{
+  border: 1px solid;
+}
+.fourBand{
+  display:flex;
+  flex-direction:column;
+}
+.bandName,.bandNumber{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  text-align:center;
+}
+.resistorCalculate{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.bandSwitch{
+  transition: all .3s ease-in-out;
+}
+.bandSwitch:hover{
+  background-color: chocolate;
+  transition: all .3s ease-in-out;
+  color: #fff;
+}
+.bandName > * , .bandNumber > *{
+  width:23%;
+  border:1px solid black;
+  padding:5px;
+  text-align:center;
+  /* margin:0px 2px; */
+}
+.bandBox{
+  text-align:center;
+  text-transform: uppercase;
+  /* margin:2px; */
+}
+ .selected{
+  outline: 5px solid red;
+}
+.bandHeading{
+  font-weight: 600;
+}
+.bandNumber > .bandBox{
+  cursor: pointer;
+}
+.fourBand, .fiveBand{
+  border: 1px solid black;
+}
+
+.bandNumber:nth-child(2) > .bandBox{
+  background-color:black;
+  color:white;
+}
+.bandNumber:nth-child(3) > .bandBox{
+  background-color:rgb(153, 117, 82);
+  color:white;
+}
+.bandNumber:nth-child(4) > .bandBox{
+  background-color:rgb(255, 57, 57);
+  color:white;
+}
+.bandNumber:nth-child(5) > .bandBox{
+  background-color:rgb(255, 165, 74);
+  color:black;
+}
+.bandNumber:nth-child(6) > .bandBox{
+  background-color:rgb(255, 255, 122);
+  color:black;
+}
+
+.bandNumber:nth-child(7) > .bandBox{
+  background-color:rgb(137, 255, 137);
+  color:black;
+}
+.bandNumber:nth-child(8) > .bandBox{
+  background-color:rgb(72, 136, 242);
+  color:white;
+}
+.bandNumber:nth-child(9) > .bandBox{
+  background-color:rgb(240, 144, 246);
+  color:black;
+}
+.bandNumber:nth-child(10) > .bandBox{
+  background-color:rgb(128, 128, 128);
+  color:white;
+}
+.bandNumber:nth-child(11) > .bandBox{
+  background-color:rgb(255, 255, 255);
+  color:black;
+}
+.bandNumber:nth-child(12) > .bandBox{
+  background-color:rgb(205, 153, 51);
+  color:black;
+}
+.bandNumber:nth-child(13) > .bandBox{
+  background-color:rgb(204, 204, 204);
+  color:black;
+}
+
+.resistorContainer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:210px;
+  width:400px;
+  margin:auto;
+}
+
+.resistorWire{
+  height:5px;
+  width:70px;
+  background:rgb(195, 195, 195);
+}
+.resistorBand{
+  display:flex;
+  justify-content:space-between;
+  padding:0px 15px;
+  height:100px;
+  width:200px;
+  background: green;
+  position:relative;
+}
+
+.indBand{
+  height:100%;
+  width:20px;
+  background:yellow;
+}
+
+
+
+@media only screen and (max-width: 520px) {
+  .resistorContainer{
+    width: 250px;
+    height: 180px;
+  }
+  .container{
+    width:auto !important;
+  }
+}
